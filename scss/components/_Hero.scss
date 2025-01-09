@@ -1,0 +1,59 @@
+@use '../utils/' as u;
+.hero{
+    padding-top: u.rem(100) ;
+    padding-inline: u.rem(100);
+    background-color: var(--cl-light_blue);
+    display: flex;
+    justify-content: center;
+    gap: u.rem(100);
+
+    align-items: center;
+    
+    h1{
+        font-size: var( --font-header1);
+        color: white;
+        font-weight: 900;
+        max-width: 20ch;
+    }
+    p{
+        font-size: u.rem(16);
+        max-width: 70ch;
+        color: white;
+        line-height: 200%;
+        max-width: 70ch;
+    
+    }
+    @media (width <= u.em(835)) {
+
+        flex-direction: column;
+        gap: u.rem(80);
+        
+    }
+    @media (width <= u.em(600)){
+        padding-inline: u.rem(20);
+        padding-top: u.rem(70);
+        gap: u.rem(40);
+
+    }
+    @media (width <= u.em(1000)){
+        gap: 0;
+    }
+}
+.hero_text{
+    padding: 30px;
+    display: flex;
+    gap: u.rem(18);
+    flex-direction: column;
+    button{
+        width: u.rem(140);
+        font-family: "Poppins", serif;
+        height:     u.rem(40);
+        font-weight: 800;
+        border: none ;
+        border-radius: u.rem(24);
+        background-color: var(--cl-brown);
+        color: white;
+        cursor: pointer;
+        text-align: center;
+    }
+}

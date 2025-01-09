@@ -1,0 +1,113 @@
+@use '../utils/' as u;
+
+header{
+    background-color: var(--cl-light_blue);
+    width: 100%;
+    height: u.rem(60);
+    padding-inline: u.rem(100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    
+}
+
+nav ul{
+    max-width: u.rem(2000);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: u.rem(60);
+    a{
+        color: white;
+        font-weight: 700;
+    }
+    button{
+        width: u.rem(140);
+        font-family: "Poppins", serif;
+        height:     u.rem(40);
+        font-weight: 800;
+        border: none ;
+        border-radius: u.rem(24);
+        background-color: var( --cl-prusian-blue);
+        color: white;
+        cursor: pointer;
+    }
+}
+.logo{
+    a{
+        font-size: var(--font-logo);
+        font-weight: 800;
+        color: white;
+    }
+    
+}
+
+.large_dis i{
+    display: none;
+    @media (width <= u.em(711)){
+        display: block;
+        font-size: u.rem(30);
+        cursor: pointer;
+        color: white;
+    }
+   
+}
+.large_dis ul{
+    @media (width <= u.em(711)){
+        display: none;
+
+    }
+}
+.small_dis ul{
+
+    right: -100%;
+}
+.small_dis.active{
+    left: 0;
+
+}
+.small_dis{
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    left: 100%;
+    transition: 0.5s ease-in-out;
+
+    ul{
+        
+        background-color: var( --cl-rich_black);
+        inset: 0;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: u.rem(32);
+        height: 100vh;
+        padding-top: 30vh;
+       
+    }
+    button{
+        
+        background-color: var(--cl-brown);
+    }
+    i{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: u.rem(30);
+        cursor: pointer;
+
+        color: white;
+        font-size: u.rem(40);
+    }
+}
+
+@media  (width < u.em(834)){
+    header{
+    padding-inline: u.rem(50);
+   }
+}

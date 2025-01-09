@@ -1,0 +1,186 @@
+@use "../utils/" as u;
+
+.Testimonials{
+    padding-inline: u.rem(200);
+    padding-block:u.rem(60);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1600px; 
+    margin: 0 auto; 
+    width: 100%; 
+    gap: u.rem(70);
+  @media (width <= u.em(1314)){
+    padding-inline:u.rem(50);
+  }
+    @media (width <= u.em(835)){ // tablite
+        padding-inline:u.rem(50);
+        padding-block: 4px;
+        flex-direction: column-reverse;
+    }
+    @media (width <= u.em(835)){ // small viewport
+        padding-inline:u.rem(18);
+     
+    }
+}
+.Testimonials_cards{
+    display: flex;
+    margin: u.rem(100);
+    flex-direction: column;
+    gap: u.rem(50);
+    @media (width <= u.em(1444)){ // tablite
+        margin: u.rem(30);
+    }
+    @media (width <= u.em(835)){ // tablite
+        margin: u.rem(10);
+    }
+    @media (width <= u.em(357)){ // tablite
+        margin: u.rem(0);
+    }
+}
+#centent_2{
+    background-color: var(--cl-brown);
+}
+.Testimonials_card{
+    width: u.rem(442);
+    background-color: white;
+    height: u.rem(222);
+    box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    @media (width <= u.em(835)){ // tablite
+        width: 100%;
+    }
+    
+    .testimonials_centent{
+        background-color: var(--cl-light_blue);
+        width: 100%;
+        height: 40%;
+        border-radius: 20px;
+        padding: u.rem(25);
+        color: white;
+        font-size: u.rem(18);
+        font-weight: 800;
+    }
+   
+}
+.testimonials_image{
+    display: flex;
+    gap: u.rem(50);
+    align-items: center;
+    align-items: center;
+    padding: u.rem(30);
+    position: relative;
+
+    img{
+        position: absolute;
+        right: 10%;
+
+    }
+    h1{
+        color: var( --cl-prusian-blue);
+        font-size: var(--font-header4);
+        font-weight: 800;
+    
+    }
+    p{
+       font-size: u.rem(18);
+       overflow: hidden; /* Hide overflowing text */
+        text-overflow: ellipsis; 
+    
+    }
+    
+}
+.Testimonials_card2{
+    position: relative;
+    background-color: white;
+    left: 4%;
+    width: u.rem(442);
+    height: u.rem(222);
+    box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    @media (width <= u.em(835)){ // tablite
+        width: 100%;
+        left: 0;
+    }
+    
+    .testimonials_centent{
+        background-color: var(--cl-light_blue);
+        width: 100%;
+        height: 40%;
+        border-radius: 20px;
+        padding: u.rem(25);
+        color: white;
+        font-size: u.rem(18);
+        font-weight: 800;
+    }
+
+}
+.testimonials_image{
+    display: flex;
+    gap: u.rem(50);
+    align-items: center;
+    padding: u.rem(30);
+    
+    img{
+        
+        right: 10%;
+    }
+    h1{
+        color: var( --cl-prusian-blue);
+        font-size: var(--font-header4);
+        font-weight: 800;
+    }
+    p{
+        font-size: u.rem(18);
+        
+    }
+    
+}
+.line {
+    width: 28px;
+    height: 546px;
+    background-color: black;
+    position: absolute;
+    left: 14%;
+    border-radius: 24px;
+    z-index: -10; /* Keep it behind other elements */
+    top: -27px; /* Adjust as necessary to align with the cards */
+  }
+  .Testimonials_cards {
+    position: relative; /* Ensure .line is positioned relative to this container */
+    display: flex;
+    flex-direction: column;
+    gap: u.rem(50);
+  
+  }
+.Testimonials_text{
+    align-items: center;
+    h1{
+        font-size: var(--font-header2);
+       
+        font-weight: 800;
+        color: var(--cl-prusian-blue);
+    }
+    p{
+        font-size: u.rem(16);
+        padding-block: u.rem(20);
+        line-height: 200%;
+        max-width: 50ch;
+    }
+    button{
+        width: u.rem(140);
+        font-family: "Poppins", serif;
+        height:     u.rem(40);
+        font-weight: 800;
+        border: none ;
+        border-radius: u.rem(24);
+        background-color: var(--cl-brown);
+        color: white;
+        cursor: pointer;
+        text-align: center;
+    }
+    @media (width <= u.em(835)){
+        margin-block: 50px;
+        padding: 35px;
+    }
+}

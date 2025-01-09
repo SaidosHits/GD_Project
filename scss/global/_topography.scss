@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+
+    --font-logo:clamp(2.25rem, 2.1491228070175437rem + 0.3898635477582846vw, 2.5rem);
+    --font-header1:clamp(2.25rem, 1.8969298245614035rem + 1.364522417153996vw, 3.125rem);
+    --font-header2:clamp(2.25rem, 1.6447368421052633rem + 2.3391812865497075vw, 3.75rem);
+    --font-header3:clamp(1.875rem, -3.125rem + 333.33333333333337vw, 83.125rem);
+    --font-header4 :clamp(1.125rem, 0.9736842105263158rem + 0.5847953216374269vw, 1.5rem);
+
+}
