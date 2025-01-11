@@ -1,0 +1,55 @@
+@use '../utils/' as u;
+
+.downlaod.app{
+    padding-block: u.rem(100);
+}
+.downalod_frame{
+    padding-block: u.rem(20);
+    text-align: center;
+    h1{
+        font-size: var(--font-header1);
+        color: var( --cl-prusian-blue);
+        font-weight: 900;
+    }
+    p{
+        margin-top: u.rem(20);
+        font-style: normal;
+        font-weight: 400;
+        font-size: u.rem(16);
+        line-height: 200%;
+        
+    }
+}
+.downlaod_cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-block: u.rem(20);
+    @media (width <= u.em(739)){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.downalod_card{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    gap: u.rem(20);
+    padding-inline: u.rem(20);
+    cursor: pointer;
+    margin: u.rem(10);
+    width: u.rem(313);
+    height: u.rem(100);
+    background-color: black;
+    h1{
+        font-size: u.rem(24);
+        font-weight: 400;
+    }
+    
+    @media (width <= u.em(739)){
+        
+    }
+}

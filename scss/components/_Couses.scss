@@ -1,0 +1,122 @@
+@use '../utils/' as u;
+
+
+.courses{
+    padding-block: u.rem(100);
+
+    margin-block: u.rem(30);
+    background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+    h1{
+        font-size: var(--font-header1);
+        font-weight: 800;
+        color: white;
+        text-align: center;
+    }
+}
+.courses_container{
+    padding: u.rem(50);
+    max-width: u.rem(1440);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    @media (width <= u.em(1200)){
+        flex-direction: column;
+        gap: u.rem(20);
+        align-items: center;
+        padding: u.rem(80);
+    }
+    @media (width <= u.em(600)){
+        padding: 0;
+        padding-top: u.rem(40);
+    }
+
+}
+.course_card{
+    width: u.rem(526);
+    padding: u.rem(22);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: u.rem(24);
+    img{
+        bottom: 7.5%;
+        position: relative;
+        text-align: center;
+    }
+    @media (width <= u.em(1200)){
+        width: 100%;
+    }
+    .line_card{
+        width: 80%;
+        height: u.rem(10);
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+
+    }
+    
+}
+.card_title{
+    display: flex;
+    padding: u.rem(10);
+    justify-content: space-between;
+    span{
+        font-size: large;
+        font-weight: 800;
+        margin-top: u.rem(30);
+    }
+    p{
+        font-size: var(--font-header3);
+        font-weight: 800;
+        min-width: 66%;
+        color: var(--cl-prusian-blue);
+    }
+}
+.duration {
+    font-size: 16px;
+    color: #0a2540; /* Dark blue */
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.clock-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background: url('https://img.icons8.com/ios-filled/50/clock.png') no-repeat center;
+    background-size: contain;
+}
+
+.courses_container{
+    position: relative;
+    button{
+        position: absolute;
+        right: 8%;
+        bottom: -9%;
+        width: u.rem(140);
+        font-family: "Poppins", serif;
+        height:     u.rem(40);
+        font-weight: 800;
+        border: none ;
+        border-radius: u.rem(24);
+        background-color: var(--cl-brown);
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        @media (max-width:1226px) and (min-width:600px) {
+            right: 8%;
+            bottom: -4%;
+            
+        }
+    }
+}
+
+
+

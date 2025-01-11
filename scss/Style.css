@@ -231,11 +231,14 @@ nav ul button {
   }
 }
 .Testimonials_card .testimonials_centent {
+  align-items: center;
+  color: white;
+  display: grid;
   background-color: var(--cl-light_blue);
   width: 100%;
   height: 40%;
   border-radius: 20px;
-  padding: 1.5625rem;
+  padding: 1.125rem;
   color: white;
   font-size: 1.125rem;
   font-weight: 800;
@@ -259,7 +262,7 @@ nav ul button {
   font-weight: 800;
 }
 .testimonials_image p {
-  font-size: 1.125rem;
+  font-size: var(--font-header5);
   overflow: hidden; /* Hide overflowing text */
   text-overflow: ellipsis;
 }
@@ -280,6 +283,9 @@ nav ul button {
   }
 }
 .Testimonials_card2 .testimonials_centent {
+  align-items: center;
+  color: white;
+  display: grid;
   background-color: var(--cl-light_blue);
   width: 100%;
   height: 40%;
@@ -298,6 +304,16 @@ nav ul button {
 }
 .testimonials_image img {
   right: 10%;
+}
+@media (width <= 52.1875em) {
+  .testimonials_image img {
+    width: 6.875rem;
+  }
+}
+@media (width <= 25em) {
+  .testimonials_image img {
+    width: 5.625rem;
+  }
 }
 .testimonials_image h1 {
   color: var(--cl-prusian-blue);
@@ -359,6 +375,180 @@ nav ul button {
   }
 }
 
+.courses {
+  padding-block: 6.25rem;
+  margin-block: 1.875rem;
+  background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+}
+.courses h1 {
+  font-size: var(--font-header1);
+  font-weight: 800;
+  color: white;
+  text-align: center;
+}
+
+.courses_container {
+  padding: 3.125rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+@media (width <= 75em) {
+  .courses_container {
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+    padding: 5rem;
+  }
+}
+@media (width <= 37.5em) {
+  .courses_container {
+    padding: 0;
+    padding-top: 2.5rem;
+  }
+}
+
+.course_card {
+  width: 32.875rem;
+  padding: 1.375rem;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1.5rem;
+}
+.course_card img {
+  bottom: 7.5%;
+  position: relative;
+  text-align: center;
+}
+@media (width <= 75em) {
+  .course_card {
+    width: 100%;
+  }
+}
+.course_card .line_card {
+  width: 80%;
+  height: 0.625rem;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+
+.card_title {
+  display: flex;
+  padding: 0.625rem;
+  justify-content: space-between;
+}
+.card_title span {
+  font-size: large;
+  font-weight: 800;
+  margin-top: 1.875rem;
+}
+.card_title p {
+  font-size: var(--font-header3);
+  font-weight: 800;
+  min-width: 66%;
+  color: var(--cl-prusian-blue);
+}
+
+.duration {
+  font-size: 16px;
+  color: #0a2540; /* Dark blue */
+  display: flex;
+  align-items: center;
+}
+
+.clock-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  background: url("https://img.icons8.com/ios-filled/50/clock.png") no-repeat center;
+  background-size: contain;
+}
+
+.courses_container {
+  position: relative;
+}
+.courses_container button {
+  position: absolute;
+  right: 8%;
+  bottom: -9%;
+  width: 8.75rem;
+  font-family: "Poppins", serif;
+  height: 2.5rem;
+  font-weight: 800;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: var(--cl-brown);
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+@media (max-width: 1226px) and (min-width: 600px) {
+  .courses_container button {
+    right: 8%;
+    bottom: -4%;
+  }
+}
+
+.downlaod.app {
+  padding-block: 6.25rem;
+}
+
+.downalod_frame {
+  padding-block: 1.25rem;
+  text-align: center;
+}
+.downalod_frame h1 {
+  font-size: var(--font-header1);
+  color: var(--cl-prusian-blue);
+  font-weight: 900;
+}
+.downalod_frame p {
+  margin-top: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 200%;
+}
+
+.downlaod_cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-block: 1.25rem;
+}
+@media (width <= 46.1875em) {
+  .downlaod_cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.downalod_card {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+  gap: 1.25rem;
+  padding-inline: 1.25rem;
+  cursor: pointer;
+  margin: 0.625rem;
+  width: 19.5625rem;
+  height: 6.25rem;
+  background-color: black;
+}
+.downalod_card h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 * {
   padding: 0;
   font-family: "Raleway", serif;
@@ -377,6 +567,10 @@ body.lock {
   overflow: hidden;
 }
 
+p {
+  font-family: "Poppins", serif;
+}
+
 * {
   --cl-brown:#DA722C;
   --cl-blue:#057ADA;
@@ -390,6 +584,7 @@ body.lock {
   --font-logo:clamp(2.25rem, 2.1491228070175437rem + 0.3898635477582846vw, 2.5rem);
   --font-header1:clamp(2.25rem, 1.8969298245614035rem + 1.364522417153996vw, 3.125rem);
   --font-header2:clamp(2.25rem, 1.6447368421052633rem + 2.3391812865497075vw, 3.75rem);
-  --font-header3:clamp(1.875rem, -3.125rem + 333.33333333333337vw, 83.125rem);
+  --font-header3:clamp(1.5rem, 1.3492718446601941rem + 0.5825242718446602vw, 1.875rem);
   --font-header4:clamp(1.125rem, 0.9736842105263158rem + 0.5847953216374269vw, 1.5rem);
+  --font-header5:clamp(0.875rem, 0.7741228070175439rem + 0.3898635477582846vw, 1.125rem);
 }/*# sourceMappingURL=style.css.map */

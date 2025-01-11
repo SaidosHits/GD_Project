@@ -16,10 +16,8 @@ This is a responsive website designed to promote a comprehensive course on Game 
 - **Font Awesome**: For icons.
 - **Google Fonts**: For typography (Raleway and Poppins).
 
-## Live Preview
+## Folder Structure
 
-Check out the live preview of the website:  
-👉 [Live Preview](https://saidoshits.github.io/GD_Project/)
 
 ## Preview
 
