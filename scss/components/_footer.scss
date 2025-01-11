@@ -1,0 +1,133 @@
+@use '../utils/' as u;
+
+footer {
+    margin-top: u.rem(60);
+    padding-inline: u.rem(70);
+    padding-block: u.rem(30);
+    background-color: black;
+    color: white;
+    @media (width <= u.em(450)){
+        padding-inline: 0;
+    }
+}
+
+.footer_main{
+    max-width: u.rem(1440);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 1.4fr; /* Default layout */
+    justify-content: center;
+    gap: 0px 0px;
+}
+/* For screens smaller than 1344px */
+@media (width <= u.em(1000) ) {
+    .footer_main {
+        grid-template-columns: 1fr 1fr; /* Two columns layout */
+    }
+
+    #item3 {
+        grid-column: span 2; /* Make the last item span two columns */
+    }
+}
+
+/* For screens smaller than 600px */
+
+
+/* For screens smaller than 400px */
+@media (width <= 450px) {
+    .footer_main {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 0px; /* Add spacing between items */
+    justify-items: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: center; /* Center text inside each item */
+    }
+    #item3 {
+        grid-column: span 1; /* Make the last item span two columns */
+    }
+    
+}
+
+.footer_links{
+    p{
+        color: var(--cl-brown);
+        font-size: u.rem(18);
+        font-weight: 900;
+    }
+    a{
+        color: white;
+        font-size: u.rem(16);
+        font-style: normal;
+        font-weight: 400;
+    }
+    padding: u.rem(30);
+}
+
+.footer_links_container{
+    display: flex;
+    flex-direction: column;
+    gap: u.rem(10);
+    padding: u.rem(20);
+}
+.social_links{
+    a{
+        padding: u.rem(5);
+    }
+}
+.subscribe_frame{
+    display: flex;
+    max-width: 80%;
+    margin-top: u.rem(30);
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    // flex-direction: column;
+    input{
+        width: 100%;
+        height: u.rem(39);
+        border-radius: u.rem(8);
+        padding-top: 15px;
+        padding: u.rem(20);
+        font-size: 16px;
+        background-color: none;
+        outline: none;
+        border: none;
+    }
+    button{
+        width: u.rem(135);
+        margin: 2px;
+        height: u.rem(30);
+        background-color: var( --cl-prusian-blue);
+        color: white;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-weight: 800;
+        outline: none;
+        
+    }
+    @media (width <= 450px) {
+        flex-direction: column;
+        gap: u.rem(10);
+        max-width: 100%;
+        background-color: black;
+        input{
+            width: 100%;
+            background-color: none;
+        }
+    }
+}
+._content{
+    max-width: u.rem(1440);
+    margin: 0 auto;
+}
+.div{
+    
+    background-color: black;
+    color: white;
+    padding: u.rem(40);
+    p{
+        font-size: 16px;
+    }
+}

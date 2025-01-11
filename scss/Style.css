@@ -457,7 +457,7 @@ nav ul button {
 
 .duration {
   font-size: 16px;
-  color: #0a2540; /* Dark blue */
+  color: #0a2540;
   display: flex;
   align-items: center;
 }
@@ -549,6 +549,136 @@ nav ul button {
   font-size: 1.5rem;
   font-weight: 400;
 }
+footer {
+  margin-top: 3.75rem;
+  padding-inline: 4.375rem;
+  padding-block: 1.875rem;
+  background-color: black;
+  color: white;
+}
+@media (width <= 28.125em) {
+  footer {
+    padding-inline: 0;
+  }
+}
+
+.footer_main {
+  max-width: 90rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.8fr 0.8fr 1.4fr; /* Default layout */
+  justify-content: center;
+  gap: 0px 0px;
+}
+
+/* For screens smaller than 1344px */
+@media (width <= 62.5em) {
+  .footer_main {
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+  }
+  #item3 {
+    grid-column: span 2; /* Make the last item span two columns */
+  }
+}
+/* For screens smaller than 600px */
+/* For screens smaller than 400px */
+@media (width <= 450px) {
+  .footer_main {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 0px; /* Add spacing between items */
+    justify-items: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: center; /* Center text inside each item */
+  }
+  #item3 {
+    grid-column: span 1; /* Make the last item span two columns */
+  }
+}
+.footer_links {
+  padding: 1.875rem;
+}
+.footer_links p {
+  color: var(--cl-brown);
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+.footer_links a {
+  color: white;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.footer_links_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 1.25rem;
+}
+
+.social_links a {
+  padding: 0.3125rem;
+}
+
+.subscribe_frame {
+  display: flex;
+  max-width: 80%;
+  margin-top: 1.875rem;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+}
+.subscribe_frame input {
+  width: 100%;
+  height: 2.4375rem;
+  border-radius: 0.5rem;
+  padding-top: 15px;
+  padding: 1.25rem;
+  font-size: 16px;
+  background-color: none;
+  outline: none;
+  border: none;
+}
+.subscribe_frame button {
+  width: 8.4375rem;
+  margin: 2px;
+  height: 1.875rem;
+  background-color: var(--cl-prusian-blue);
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  outline: none;
+}
+@media (width <= 450px) {
+  .subscribe_frame {
+    flex-direction: column;
+    gap: 0.625rem;
+    max-width: 100%;
+    background-color: black;
+  }
+  .subscribe_frame input {
+    width: 100%;
+    background-color: none;
+  }
+}
+
+._content {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.div {
+  background-color: black;
+  color: white;
+  padding: 2.5rem;
+}
+.div p {
+  font-size: 16px;
+}
+
 * {
   padding: 0;
   font-family: "Raleway", serif;
