@@ -18,6 +18,8 @@ This is a responsive website designed to promote a comprehensive course on Game 
 
 ## Folder Structure
 
+Check out the live preview of the website:  
+   👉 [Live Preview](https://saidoshits.github.io/GD_Project/)
 
 ## Preview
 
