@@ -38,5 +38,5 @@ Here are some previews of the website:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+  git clone https://github.com/SaidosHits/GD_Project.git
    cd your-repo-name
